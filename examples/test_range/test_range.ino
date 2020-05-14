@@ -7,7 +7,7 @@
 //    (c) : MIT
 //
 
-#include "random.h"
+#include "Prandom.h"
 
 const int runs = 1000;
 

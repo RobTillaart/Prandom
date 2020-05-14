@@ -1,17 +1,18 @@
 //
-//    FILE: random.cpp
+//    FILE: Prandom.cpp
 //  AUTHOR: Rob dot Tillaart at gmail dot com
-// VERSION: 0.1.0
-// PURPOSE: random functions for Arduino
+// VERSION: 0.1.1
+// PURPOSE: Arduino library for random number generation with Python random interface
 //
 // HISTORY:
 // 0.1.0    2020-05-13 complete redo based upon python random interface
 //          https://docs.python.org/3/library/random.html
+// 0.1.1    renamed all to Prandom
 
 // code nased upon Python implementation although some small optimizations
 // and tweaks were needed to get it working.
 
-#include "random.h"
+#include "Prandom.h"
 
 Prandom::Prandom()
 {

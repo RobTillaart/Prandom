@@ -1,6 +1,6 @@
-# random
+# Prandom
 
-Arduino library for random numbers with Python Random interface
+Arduino library for random number generation with Python random interface
 
 # Description
 

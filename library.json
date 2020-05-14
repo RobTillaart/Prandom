@@ -1,7 +1,7 @@
 {
   "name": "Prandom",
   "keywords": "random normal distribution",
-  "description": "Arduino library for random numbers with Python Random interface.",
+  "description": "Arduino library for random number generation with Python random interface.",
   "authors":
   [
     {
@@ -13,12 +13,12 @@
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/RobTillaart/random.git"
+    "url": "https://github.com/RobTillaart/Prandom.git"
   },
   "version":"0.1.0",
   "frameworks": "arduino",
   "platforms": "*",
   "export": {
-    "include": "random"
+    "include": "Prandom"
   }
 }

@@ -7,7 +7,7 @@
 //    (c) : MIT
 //
 
-#include "random.h"
+#include "Prandom.h"
 
 const int runs = 1000;
 
@@ -230,7 +230,7 @@ void test_gammavariate_2()
   start = micros();
   for (int i = 0; i < runs; i++)
   {
-    sum += R.gammavariate(0, 1);
+    sum += R.gammavariate(200, 1);
   }
   stop = micros();
   Serial.print(stop - start);
@@ -246,7 +246,7 @@ void test_betavariate_2()
   start = micros();
   for (int i = 0; i < runs; i++)
   {
-    sum += R.betavariate(0, 1);
+    sum += R.betavariate(3, 3);
   }
   stop = micros();
   Serial.print(stop - start);
