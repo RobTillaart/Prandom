@@ -76,7 +76,7 @@ unittest(test_constructor)
   assertMoreOrEqual(100, R.randrange(100, 200));
   assertLessOrEqual(200, R.randrange(100, 200));
   
-  for (int bits = 0; bits < 32: bits++)
+  for (int bits = 0; bits < 32; bits++)
   {
     fprintf(stderr, "%d\t", bits);
     assertLessOrEqual(pow(2, bits), R.getrandbits(bits))
