@@ -11,9 +11,11 @@
 //          https://www.pcg-random.org/
 //
 
+
 #include "Arduino.h"
 
 #define PRANDOM_LIB_VERSION       (F("0.1.3"))
+
 
 class Prandom
 {
@@ -22,9 +24,9 @@ public:
   Prandom(uint32_t s);
 
   void seed();
-  void seed(uint32_t s, uint32_t t = 2);  // marsaglia need 2 seeds, but 1 will work too
+  void seed(uint32_t s, uint32_t t = 2);  // Marsaglia need 2 seeds, but 1 will work too
 
-  //
+
   // integer methods
   //
   uint32_t getrandbits(uint8_t n);
@@ -33,7 +35,7 @@ public:
   // randint is inclusive end value
   uint32_t randint(uint32_t start, uint32_t stop) { return randrange(start, stop + 1); };
 
-  //
+
   // real distributions
   //
   float random(const float top = 1.0);
@@ -47,13 +49,14 @@ public:
   float betavariate(float alpha, float beta);
   float paretovariate(float alpha);
   float weibullvariate(float alpha, float beta);
-  
-  //
+
+ 
   // Circular distributions
   //
   // mu is mean angle in radians
-  // kappa is concentration param, 0 -> uniform.
+  // kappa is concentration parameter, 0 -> uniform.
   float vonmisesvariate(float mu, float kappa = 0);
+
 
 private:
 
@@ -65,5 +68,6 @@ private:
   uint32_t _m_z = 2;
   uint32_t __random();
 };
+
 
 // -- END OF FILE --
