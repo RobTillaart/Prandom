@@ -1,11 +1,8 @@
 //
 //    FILE: test_range.ino
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.0
 // PURPOSE: demo
 //    DATE: 2020-05-13
-//    (c) : MIT
-//
 
 
 #include "Prandom.h"
